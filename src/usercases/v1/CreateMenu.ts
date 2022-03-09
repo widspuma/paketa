@@ -22,9 +22,6 @@ export default
                 }
             }
 
-            if (typeof data.relatedId !== 'undefined'){
-                return { message: 'RelatedId must be diferente of id.'};
-            }
             const { id } = await Menu.create(data)
             return { id: id};
             ;
