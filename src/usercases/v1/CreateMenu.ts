@@ -13,7 +13,7 @@ export default
 
             if (typeof data.relatedId !== 'undefined'){
                 if (data.relatedId === data.id)
-                    return { message: 'RelatedId must be diferente of id.'};
+                    return { message: 'RelatedId must be different of id.'};
 
                 if (data.relatedId > 0){
                     const menu = await Menu.findOne({ "id": data.relatedId })

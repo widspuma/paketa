@@ -18,7 +18,7 @@ export default{
         const data = await deleteMenu(req.params.id);
 
         if (data?.id)
-            return res.status(200);
+            return res.status(200).json({});
         else
             return res.status(400).json({ message : data.message });
     },
